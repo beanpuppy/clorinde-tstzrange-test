@@ -1,0 +1,12 @@
+[package]
+name = "clorinde-tstzrange-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clorinde = { path = "./clorinde" }
+tokio = { version = "1.44.2", features = ["macros", "rt-multi-thread"] }
+futures = "0.3.31"
+
+postgres_range = { version = "0.11.1", features = ["with-chrono-0_4"] }
+chrono = "0.4.40"
